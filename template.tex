@@ -20,57 +20,58 @@
 \date{29th April 1967}
 
 \begin{document}
-	
-	%%% SLIDES %%%
-	\section{Introduction}
-	
-	\begin{frame}{Introduction}
-		Welcome to my presentation!
-	\end{frame}
-	
-	\section[Short section title]{Long section title}
-	
-	\subsection{Subsection title}
-	\begin{frame}{Frame title}
-		Frame content.
-	\end{frame}
-	
-	\subsection{AMS-LaTeX}
-	\begin{frame}{Lefschetz fixed point theorem}
-		\begin{theorem}[S. Lefschetz]
-			Let \(f \colon X \to X\) be a continuous self-map on a connected, compact polyhedron \(X\). If \(L(f) \neq 0\), then \(f\) has at least one fixed point.
-		\end{theorem}
-	\end{frame}
-	
-	\subsection{Diagrams}
-	\begin{frame}[fragile]{General lifting lemma}
-		
-		Let \(p \colon Z \to Y\) be a covering map and fix \(y \in Y\) and \(z \in Z\) such that \(p(z) = y\). Let \(f \colon X \to Y\) be a continuous map, with \(f(x) = y\). Suppose \(Z\) is path-connected and locally path-connected.
-		
-		\medskip
-		 
-		If
-		\begin{equation*}
-			f_\pi ( \pi_1(X,x) ) \subseteq p_\pi(\pi_1(Z,z)),
-		\end{equation*}
-		then there exists a continuous map \(\tilde{f} \colon X \to Z\) such that:
-		\begin{itemize}
-			\item \(p \circ \tilde{f} = f\), i.e. the diagram below commutes,
-			\item \(\tilde{f}(x) = z\).
-		\end{itemize}
-		\[
-		% Requires the frame to be given the "fragile" option
-		\begin{tikzcd}
-			& Z \arrow[d,"p"]\\
-			X \arrow[ur,"\tilde{f}"] \arrow[r,"f"] & Y
-		\end{tikzcd}
-		\]
-	\end{frame}
-	
-	\section{Conclusion}
-	\begin{frame}
-		\frametitle{Closing frame}
-		Make sure to thank your audience and/or ask if there are any questions.
-	\end{frame}
-	
+    
+    %%% SLIDES %%%
+    \section{Introduction}
+    
+    \begin{frame}{Introduction}
+        Welcome to my presentation!
+    \end{frame}
+    
+    \section[Short section title]{Long section title}
+    
+    \subsection{Subsection title}
+    \begin{frame}{Frame title}
+        Frame content.
+    \end{frame}
+    
+    \subsection{AMS-LaTeX}
+    \begin{frame}{Lefschetz fixed point theorem}
+        \begin{theorem}[S. Lefschetz]
+            Let \(f \colon X \to X\) be a continuous self-map on a connected, compact polyhedron \(X\). If \(L(f) \neq 0\), then \(f\) has at least one fixed point.
+        \end{theorem}
+    \end{frame}
+    
+    \subsection{Diagrams}
+    \begin{frame}[fragile]{General lifting lemma}
+        
+        Let \(p \colon Z \to Y\) be a covering map and fix \(y \in Y\) and \(z \in Z\) such that \(p(z) = y\).
+	Let \(f \colon X \to Y\) be a continuous map with \(f(x) = y\).
+        Suppose that \(Z\) is path-connected and locally path-connected.
+        
+        \medskip
+         
+        If
+        \begin{equation*}
+            f_\pi ( \pi_1(X,x) ) \subseteq p_\pi(\pi_1(Z,z)),
+        \end{equation*}
+        then there exists a continuous map \(\tilde{f} \colon X \to Z\) such that:
+        \begin{itemize}
+            \item \(p \circ \tilde{f} = f\), i.e.\@ the diagram below commutes,
+            \item \(\tilde{f}(x) = z\).
+        \end{itemize}
+        \[
+            % Requires the frame to be given the "fragile" option
+            \begin{tikzcd}
+                & Z \arrow[d,"p"]\\
+                X \arrow[ur,"\tilde{f}"] \arrow[r,"f"] & Y
+            \end{tikzcd}
+        \]
+    \end{frame}
+    
+    \section{Conclusion}
+    \begin{frame}{Closing frame}
+        Make sure to thank your audience and/or ask if there are any questions.
+    \end{frame}
+    
 \end{document}
