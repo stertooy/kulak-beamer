@@ -61,17 +61,15 @@
 
 \DeclareOptionBeamer{kul}
 {
-	\renewcommand{\Background}{\includegraphics[width=\paperwidth,height=\paperheight]{kuleuvenBackground}}
-	\renewcommand{\Outline}{\includegraphics[width=\paperwidth,height=\paperheight]{kuleuvenOutline}}
-	\renewcommand{\Titlepage}{\includegraphics[width=\paperwidth,height=\paperheight]{kuleuvenTitlepage}}
-	\renewcommand{\Logo}{\includegraphics[height=.8cm]{kuleuvenLogo}}
+	\renewcommand{\Background}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kuleuvenBackground}}
+	\renewcommand{\Outline}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kuleuvenOutline}}
+	\renewcommand{\Titlepage}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kuleuvenTitlepage}}
 }
 \DeclareOptionBeamer{kulak}
 {
-	\providecommand{\Background}{\includegraphics[width=\paperwidth,height=\paperheight]{kulakBackground}}
-	\providecommand{\Outline}{\includegraphics[width=\paperwidth,height=\paperheight]{kulakOutline}}
-	\providecommand{\Titlepage}{\includegraphics[width=\paperwidth,height=\paperheight]{kulakTitlepage}}
-	\providecommand{\Logo}{\includegraphics[height=.8cm]{kulakLogo}}
+	\providecommand{\Background}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kulakBackground}}
+	\providecommand{\Outline}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kulakOutline}}
+	\providecommand{\Titlepage}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kulakTitlepage}}
 }
 
 
