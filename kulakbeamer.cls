@@ -40,7 +40,7 @@
 \definecolor{KULredbrown}   {RGB}   { 186, 113,  60 }
 
 % Colours from beamer style
-\definecolor{lgrey}{gray}{.95} % light grey from beamerstyle
+\definecolor{lgrey}         {gray}  {.95}             % light grey from beamerstyle
 
 
 % Class options
