@@ -46,40 +46,40 @@
 % Class options
 \DeclareOptionBeamer{kulak}
 {
-	\providecommand{\Background}{\includegraphics[width=\paperwidth,height=\paperheight]{bg/kulakBackground}}
-	\providecommand{\Outline}   {\includegraphics[width=\paperwidth,height=\paperheight]{bg/kulakOutline}}
-	\providecommand{\Titlepage} {\includegraphics[width=\paperwidth,height=\paperheight]{bg/kulakTitlepage}}
+    \providecommand{\Background}{\includegraphics[width=\paperwidth,height=\paperheight]{bg/kulakBackground}}
+    \providecommand{\Outline}   {\includegraphics[width=\paperwidth,height=\paperheight]{bg/kulakOutline}}
+    \providecommand{\Titlepage} {\includegraphics[width=\paperwidth,height=\paperheight]{bg/kulakTitlepage}}
 }
 \DeclareOptionBeamer{kul}
 {
-	\renewcommand{\Background}  {\includegraphics[width=\paperwidth,height=\paperheight]{bg/kuleuvenBackground}}
-	\renewcommand{\Outline}     {\includegraphics[width=\paperwidth,height=\paperheight]{bg/kuleuvenOutline}}
-	\renewcommand{\Titlepage}   {\includegraphics[width=\paperwidth,height=\paperheight]{bg/kuleuvenTitlepage}}
+    \renewcommand{\Background}  {\includegraphics[width=\paperwidth,height=\paperheight]{bg/kuleuvenBackground}}
+    \renewcommand{\Outline}     {\includegraphics[width=\paperwidth,height=\paperheight]{bg/kuleuvenOutline}}
+    \renewcommand{\Titlepage}   {\includegraphics[width=\paperwidth,height=\paperheight]{bg/kuleuvenTitlepage}}
 }
 
 
 \newcommand{\InsertFrames}{\insertframenumber}
 \DeclareOptionBeamer{totalframes}
 {
-	\renewcommand{\InsertFrames}{\insertframenumber/\inserttotalframenumber}
+    \renewcommand{\InsertFrames}{\insertframenumber/\inserttotalframenumber}
 }
 
 
 \providecommand{\outlinename}{Outline}
 \DeclareOptionBeamer{outline}
 {
-	\AtBeginSection[]{
-		\begin{frame}
-			\frametitle{\outlinename}
-			{
-				\hypersetup{hidelinks}
-				\hfill
-				{\large
-					\parbox{.95\textwidth}{\tableofcontents[currentsection,hideothersubsections]}
-				}
-			}
-		\end{frame}
-	}
+    \AtBeginSection[]{
+        \begin{frame}
+            \frametitle{\outlinename}
+            {
+                \hypersetup{hidelinks}
+                \hfill
+                {\large
+                    \parbox{.95\textwidth}{\tableofcontents[currentsection,hideothersubsections]}
+                }
+            }
+        \end{frame}
+    }
 }
 
 
@@ -97,18 +97,18 @@
 \hypersetup{colorlinks,linkcolor=KULblue1,urlcolor=KULblue1}                                % link colors
 \urlstyle{sf}                                                                               % url addresses are sans-serif font (not typewritter)
 
-\setbeamercolor{title}					{ fg = white                            }
-\setbeamercolor{title page}				{ fg = white                            }
-\setbeamercolor{normal text}			{ fg = black                            }           % text color
-\setbeamercolor{frametitle}				{ fg = KULblue1                         }           % frame title color
-\setbeamercolor{section in toc}			{ fg = KULblue1                         }           % toc (section) color
-\setbeamercolor{section in toc shaded}	{ fg = KULblue1                         }           % toc (shaded section) color
-\setbeamercolor{item}					{ fg = KULblue1                         }           % item color
-\setbeamercolor{subitem}				{ fg = KULblue1                         }           % subitem color
-\setbeamercolor{subsubitem}				{ fg = KULblue1                         }           % subsubitem color
-\setbeamercolor{text}					{ fg = white,    bg = KULblue1          }           % text block color
-\setbeamercolor{caption name}			{ fg = black                            }           % figure and table caption color
-\setbeamercolor{abstract title}			{ fg = red                              }           % abstract title color
+\setbeamercolor{title}                  { fg = white                            }
+\setbeamercolor{title page}             { fg = white                            }
+\setbeamercolor{normal text}            { fg = black                            }           % text color
+\setbeamercolor{frametitle}             { fg = KULblue1                         }           % frame title color
+\setbeamercolor{section in toc}         { fg = KULblue1                         }           % toc (section) color
+\setbeamercolor{section in toc shaded}  { fg = KULblue1                         }           % toc (shaded section) color
+\setbeamercolor{item}                   { fg = KULblue1                         }           % item color
+\setbeamercolor{subitem}                { fg = KULblue1                         }           % subitem color
+\setbeamercolor{subsubitem}             { fg = KULblue1                         }           % subsubitem color
+\setbeamercolor{text}                   { fg = white,    bg = KULblue1          }           % text block color
+\setbeamercolor{caption name}           { fg = black                            }           % figure and table caption color
+\setbeamercolor{abstract title}         { fg = red                              }           % abstract title color
 
 % Blocks, theorem-like environments and colorboxes
 \setbeamerfont{block title} {size=\normalsize}                                              % block title font size
@@ -123,13 +123,13 @@
 \setbeamercolor{block title example}    { fg = KULblue1, bg = white!95!KULblue1 }           % example block title (blue)
 \setbeamercolor{block body example}     { fg = black,    bg = white!95!KULblue1 }           % example block body
 
-\setbeamercolor{box1}		            { fg = white,    bg = KULblue1          }
-\setbeamercolor{box2}		            { fg = KULblue1, bg = lgrey             }
-\setbeamercolor{box3}		            { fg = black,    bg = lgrey             }           % colour boxes
-\setbeamercolor{box4}		            { fg = red,      bg = lgrey             }
-\setbeamercolor{box5}		            { fg = white,    bg = red               }
+\setbeamercolor{box1}                   { fg = white,    bg = KULblue1          }
+\setbeamercolor{box2}                   { fg = KULblue1, bg = lgrey             }
+\setbeamercolor{box3}                   { fg = black,    bg = lgrey             }           % colour boxes
+\setbeamercolor{box4}                   { fg = red,      bg = lgrey             }
+\setbeamercolor{box5}                   { fg = white,    bg = red               }
 
-\setbeamercolor{button}		            { fg = KULblue1, bg = lgrey             }           % button frame
+\setbeamercolor{button}                 { fg = KULblue1, bg = lgrey             }           % button frame
 
 % math font
 \usefonttheme[onlymath]{serif}
@@ -165,15 +165,15 @@
   \node at ($(current  page.south  west)  + (-\hoffset,  -\voffset)$) {
     \begin{tikzpicture}[remember picture, overlay,inner sep=0mm,node distance=.5cm]
      \node[anchor=base] (line) at (.5cm ,.25\paperheight) {};
-	 \node (lineT) at (line.north west) {};
- 	 \node (lineB) at (line.south west) {};
+     \node (lineT) at (line.north west) {};
+     \node (lineB) at (line.south west) {};
      \node[above of=lineT, anchor=south west, align=left, text width=.9\paperwidth] (author) {\Large \insertauthor};
-	 \node (authorT) at (author.north west) {};
+     \node (authorT) at (author.north west) {};
      \node[above of=authorT, anchor=south west, align=left, text width=.9\paperwidth] (subtitle) {\textbf{\Large\insertsubtitle}};
      \node (subtitleT) at (subtitle.north west) {};
      \node[above of=subtitleT, anchor=south west, align=left, text width=.9\paperwidth] (title) {\textbf{\LARGE\inserttitle}};
      \node[below of=lineB, anchor=north west, align=left, text width=.9\paperwidth] (institute) {\large \textcolor{KULblue1}{\insertinstitute}};
-  	 \node (instituteB) at (institute.south west) {};
+     \node (instituteB) at (institute.south west) {};
      \node[below of=instituteB,anchor=north west, align=left, text width=.9\paperwidth] (date) {\textcolor{KULblue1}{\insertdate}};
     \end{tikzpicture}
   };
@@ -182,43 +182,43 @@
 % Title page & outline
 \AddToHook{begindocument/end}{
 
-	% Title page
-	{
-		\usebackgroundtemplate{\Titlepage}
-		\begin{frame}[plain,noframenumbering]
-			\titlepage
-		\end{frame}
-	}
+    % Title page
+    {
+        \usebackgroundtemplate{\Titlepage}
+        \begin{frame}[plain,noframenumbering]
+            \titlepage
+        \end{frame}
+    }
 
-	% Outline
-	\section*{\outlinename}
-	{
-		\usebackgroundtemplate{\Outline}
-		\begin{frame}
-			\frametitle{\outlinename}
-			{
-				\hypersetup{hidelinks}
-				\hfill
-				{\large
-					\parbox{.95\textwidth}{\tableofcontents[hideallsubsections]}
-				}
-			}
-		\end{frame}
-	}
+    % Outline
+    \section*{\outlinename}
+    {
+        \usebackgroundtemplate{\Outline}
+        \begin{frame}
+            \frametitle{\outlinename}
+            {
+                \hypersetup{hidelinks}
+                \hfill
+                {\large
+                    \parbox{.95\textwidth}{\tableofcontents[hideallsubsections]}
+                }
+            }
+        \end{frame}
+    }
 }
 
 % Frame title
 \setbeamertemplate{frametitle}
 {
-	\vspace{.5cm}
-	{\large\textbf{\insertframetitle}}
+    \vspace{.5cm}
+    {\large\textbf{\insertframetitle}}
 }
 
 % Footer
 \defbeamertemplate*{footline}{body}
 {
-	\hypersetup{linkcolor=white}
-	\vspace{10pt}
-	\hspace{.085\paperheight}
-	\raisebox{8.3pt}{\color{white}\scriptsize\hspace{11pt} \InsertFrames\ \(\cdot\) \insertshorttitle\ \(\cdot\) \insertsectionhead }
+    \hypersetup{linkcolor=white}
+    \vspace{10pt}
+    \hspace{.085\paperheight}
+    \raisebox{8.3pt}{\color{white}\scriptsize\hspace{11pt} \InsertFrames\ \(\cdot\) \insertshorttitle\ \(\cdot\) \insertsectionhead }
 }
