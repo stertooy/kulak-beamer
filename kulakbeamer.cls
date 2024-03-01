@@ -20,8 +20,8 @@
 \RequirePackage{babel}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{lmodern}
-\RequirePackage{tikz}		
-\RequirePackage{ifthen}				
+\RequirePackage{tikz}
+\RequirePackage{ifthen}
 \usetikzlibrary{shapes,shadows,arrows,backgrounds,mindmap,decorations.pathreplacing,positioning,calc,decorations.pathmorphing,fit}
 
 % Colours
@@ -35,10 +35,10 @@
 \colorlet{KULblauw3a10} {KULblauw3a!10!white}
 
 % Accent colours
-\definecolor{KULappelblauwzeegroen}{RGB}{135,192,189} 
-\definecolor{KULoranje}{RGB}{231,176,55} 
-\definecolor{KULdonkergroen}{RGB}{156,166,90} 
-\definecolor{KULgeel}{RGB}{228,218,62} 
+\definecolor{KULappelblauwzeegroen}{RGB}{135,192,189}
+\definecolor{KULoranje}{RGB}{231,176,55}
+\definecolor{KULdonkergroen}{RGB}{156,166,90}
+\definecolor{KULgeel}{RGB}{228,218,62}
 \definecolor{KULgrijsblauw}{RGB}{184,208,212}
 \definecolor{KULbruin}{RGB}{176,159,118}
 \definecolor{KULrood}{RGB}{212,119,110}
@@ -61,15 +61,15 @@
 
 \DeclareOptionBeamer{kul}
 {
-	\renewcommand{\Background}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kuleuvenBackground}}
-	\renewcommand{\Outline}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kuleuvenOutline}}
-	\renewcommand{\Titlepage}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kuleuvenTitlepage}}
+	\renewcommand{\Background}{\includegraphics[width=\paperwidth,height=\paperheight]{bg/kuleuvenBackground}}
+	\renewcommand{\Outline}{\includegraphics[width=\paperwidth,height=\paperheight]{bg/kuleuvenOutline}}
+	\renewcommand{\Titlepage}{\includegraphics[width=\paperwidth,height=\paperheight]{bg/kuleuvenTitlepage}}
 }
 \DeclareOptionBeamer{kulak}
 {
-	\providecommand{\Background}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kulakBackground}}
-	\providecommand{\Outline}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kulakOutline}}
-	\providecommand{\Titlepage}{\includegraphics[width=\paperwidth,height=\paperheight]{pdf/kulakTitlepage}}
+	\providecommand{\Background}{\includegraphics[width=\paperwidth,height=\paperheight]{bg/kulakBackground}}
+	\providecommand{\Outline}{\includegraphics[width=\paperwidth,height=\paperheight]{bg/kulakOutline}}
+	\providecommand{\Titlepage}{\includegraphics[width=\paperwidth,height=\paperheight]{bg/kulakTitlepage}}
 }
 
 
@@ -116,7 +116,7 @@
 
 \mode<all>
 
-%%		
+%%
 %%  INNER THEME
 %%
 
@@ -124,7 +124,7 @@
 \hypersetup{colorlinks,linkcolor=KULblauw1,urlcolor=KULblauw1} %link colors
 \urlstyle{sf}					%url addresses are sans-serif font (not typewritter)
 
-\setbeamercolor{title}					{fg=white}				
+\setbeamercolor{title}					{fg=white}
 \setbeamercolor{title page}				{fg=white}
 \setbeamercolor{normal text}			{fg = black}			%text color
 \setbeamercolor{frametitle}				{fg=KULblauw1}			%frame title color
@@ -149,11 +149,11 @@
 \setbeamercolor{block title example}{bg=white!95!KULblauw1,fg=KULblauw1} 	%example block title (blue)
 \setbeamercolor{block body example}{bg=white!95!KULblauw1,fg=black}		%example block body
 
-\setbeamercolor{box1}		{fg=white,bg=KULblauw1}		
+\setbeamercolor{box1}		{fg=white,bg=KULblauw1}
 \setbeamercolor{box2}		{fg=KULblauw1,bg=lgray}			%five different colour schemes for Beamer colour box
 \setbeamercolor{box3}		{fg=black,bg=lgray}
-\setbeamercolor{box4}		{fg=red,bg=lgray}	
-\setbeamercolor{box5}		{fg=white,bg=red}	
+\setbeamercolor{box4}		{fg=red,bg=lgray}
+\setbeamercolor{box5}		{fg=white,bg=red}
 
 \setbeamercolor{button}		{bg= lgray,fg=KULblauw1}			%button frame
 
@@ -176,18 +176,18 @@
 \setbeamertemplate{enumerate subsubitem}{\tiny \raisebox{.18em} \insertsubsubenumlabel } 	%subenumerate symbol
 
 
-%%		
+%%
 %%  OUTER THEME
 %%
 \usebackgroundtemplate{\Background}
 
 \setbeamertemplate{navigation symbols}{} %remove the navigation symbols
 
-%head frametitle	
+%head frametitle
 \setbeamertemplate{frametitle}
 {
 	\vspace{.5cm}
-	{\large\textbf{\insertframetitle}} 
+	{\large\textbf{\insertframetitle}}
 }
 
 \defbeamertemplate*{title page}{customized}[1][]
@@ -219,7 +219,7 @@
 
 
 \AddToHook{begindocument/end}{
-	
+
 	% Title page
 	{
 		\usebackgroundtemplate{\Titlepage}
@@ -227,7 +227,7 @@
 			\titlepage
 		\end{frame}
 	}
-	
+
 	% Outline
 	\section*{\outlinename}
 	{
