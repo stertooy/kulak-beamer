@@ -1,11 +1,3 @@
-% Corporate beamer-template for KU Leuven en Kulak
-% Stijn Rebry			- sep 2012 - original
-% Andries Vansweevelt 	-     2018 - aanpassing aan nieuwe huisstijl KU Leuven
-% Eef Temmerman 		-     2020 - aanpassing aan breedbeeld
-% Stijn Rebry 			- oct 2021 verbeteren titelpagina
-% Sam Tertooy 			- feb 2024
-% Tips en hints voor een beter resultaat altijd welkom
-
 % This template is based on the layout of the beamer style beamerthemekuleuven2, which can be found at
 % https://www.kuleuven.be/communicatie/marketing/templates/presentatiemateriaal/index.html
 % Not all of the options provided by the beamer style are implemented in this class file.

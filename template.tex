@@ -5,7 +5,7 @@
 %   outline         adds an outline frame at the start of each section
 %   totalframes     adds the total number of frames to the footer
 %   handout         handout mode, use this when printing slides
-%	<language>      e.g. dutch, UKenglish (passed on to babel)
+%    <language>      e.g. dutch, UKenglish (passed on to babel)
 {kulakbeamer}
 
 %%% PACKAGES %%%
@@ -22,7 +22,7 @@
 
 % Uncomment and edit this when using a different language!
 %\renewcommand{\outlinename}{Overzicht}
-
+    
 \begin{document}
     
     %%% SLIDES %%%
@@ -45,6 +45,12 @@
             Let \(f \colon X \to X\) be a continuous self-map on a connected, compact polyhedron \(X\).
             If \(L(f) \neq 0\), then \(f\) has at least one fixed point.
         \end{theorem}
+        \medskip
+        The converse to this theorem need not be true.
+        \medskip
+        \begin{example}
+        	The identity map \(\operatorname{id}_{S^1}\) on the circle \(S^1\) has Lefschetz number \(L(\operatorname{id}_{S^1}) = \chi(S^1) = 0\), but obviously it has infinitely many points.
+        \end{example}
     \end{frame}
     
     \subsection{Diagrams}
@@ -76,42 +82,42 @@
     
     \subsection{Colours}
     \begin{frame}{Main Colours}
-    	\bigskip
-    	\Large
-    	\begin{tabular}{lll}
-    		Primary Blue & KULblue1 & 	{\textcolor{KULblue1}{\rule{1cm}{1cm}}}\\
-    		Secondary Blue & KULblue2 & {\textcolor{KULblue2}{\rule{1cm}{1cm}}}\\
-    	\end{tabular}
+        \bigskip
+        \Large
+        \begin{tabular}{lll}
+            Primary Blue    & KULblue1  & {\textcolor{KULblue1}{\rule{1cm}{1cm}}}\\
+            Secondary Blue  & KULblue2  & {\textcolor{KULblue2}{\rule{1cm}{1cm}}}\\
+        \end{tabular}
     \end{frame}
     
      \begin{frame}{Accent Colours}
-    	\bigskip
-    	\begin{tabular}{ll@{\hskip 60pt}ll@{\hskip 60pt}ll}
-    		KULblue3a       & {\textcolor{KULblue3a}{\rule{0.5cm}{0.5cm}}}&
-    		KULblue3b       & {\textcolor{KULblue3b}{\rule{0.5cm}{0.5cm}}}&
-    		KULblue3c       & {\textcolor{KULblue3c}{\rule{0.5cm}{0.5cm}}}\\
-    		
-    		KULcyan         & {\textcolor{KULcyan}{\rule{0.5cm}{0.5cm}}}&
-    		KULorange       & {\textcolor{KULorange}{\rule{0.5cm}{0.5cm}}}&
-    		KULdarkgreen    & {\textcolor{KULdarkgreen}{\rule{0.5cm}{0.5cm}}}\\
-    		
-    		KULyellow       & {\textcolor{KULyellow}{\rule{0.5cm}{0.5cm}}}&
-    		KULgreyblue     & {\textcolor{KULgreyblue}{\rule{0.5cm}{0.5cm}}}&
-    		KULbrown        & {\textcolor{KULbrown}{\rule{0.5cm}{0.5cm}}}\\
-    		
-    		KULred          & {\textcolor{KULred}{\rule{0.5cm}{0.5cm}}}&
-    		KULgold         & {\textcolor{KULgold}{\rule{0.5cm}{0.5cm}}}&
-    		KULpurple       & {\textcolor{KULpurple}{\rule{0.5cm}{0.5cm}}}\\
-    		
-    		KULpink         & {\textcolor{KULpink}{\rule{0.5cm}{0.5cm}}}&
-    		KULlightgreen   & {\textcolor{KULlightgreen}{\rule{0.5cm}{0.5cm}}}&
-    		KULredbrown     & {\textcolor{KULredbrown}{\rule{0.5cm}{0.5cm}}}\\
-    	\end{tabular}
+        \bigskip
+        \begin{tabular}{ll@{\hskip 60pt}ll@{\hskip 60pt}ll}
+            KULblue3a       & {\textcolor{KULblue3a}{\rule{0.5cm}{0.5cm}}}&
+            KULblue3b       & {\textcolor{KULblue3b}{\rule{0.5cm}{0.5cm}}}&
+            KULblue3c       & {\textcolor{KULblue3c}{\rule{0.5cm}{0.5cm}}}\\&&&&&\\
+            
+            KULcyan         & {\textcolor{KULcyan}{\rule{0.5cm}{0.5cm}}}&
+            KULorange       & {\textcolor{KULorange}{\rule{0.5cm}{0.5cm}}}&
+            KULdarkgreen    & {\textcolor{KULdarkgreen}{\rule{0.5cm}{0.5cm}}}\\&&&&&\\
+            
+            KULyellow       & {\textcolor{KULyellow}{\rule{0.5cm}{0.5cm}}}&
+            KULgreyblue     & {\textcolor{KULgreyblue}{\rule{0.5cm}{0.5cm}}}&
+            KULbrown        & {\textcolor{KULbrown}{\rule{0.5cm}{0.5cm}}}\\&&&&&\\
+            
+            KULred          & {\textcolor{KULred}{\rule{0.5cm}{0.5cm}}}&
+            KULgold         & {\textcolor{KULgold}{\rule{0.5cm}{0.5cm}}}&
+            KULpurple       & {\textcolor{KULpurple}{\rule{0.5cm}{0.5cm}}}\\&&&&&\\
+            
+            KULpink         & {\textcolor{KULpink}{\rule{0.5cm}{0.5cm}}}&
+            KULlightgreen   & {\textcolor{KULlightgreen}{\rule{0.5cm}{0.5cm}}}&
+            KULredbrown     & {\textcolor{KULredbrown}{\rule{0.5cm}{0.5cm}}}\\
+        \end{tabular}
     \end{frame}
     
     \section{Conclusion}
     \begin{frame}{Closing frame}
-        Make sure to thank your audience and/or ask if there are any questions.
+        Make sure to thank your audience and ask if there are any questions.
     \end{frame}
     
 \end{document}
