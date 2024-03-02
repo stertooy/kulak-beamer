@@ -65,7 +65,7 @@
 }
 
 
-\providecommand{\outlinename}{Outline}
+\newcommand{\outlinename}{Outline}
 \DeclareOptionBeamer{outline}
 {
     \AtBeginSection[]{
