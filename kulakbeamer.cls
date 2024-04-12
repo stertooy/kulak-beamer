@@ -42,6 +42,10 @@
 % Colours from beamer style
 \definecolor{lgrey}         {gray}  {.95}             % light grey from beamerstyle
 
+% Two-digit spacing
+\newcommand{\twodigits}[1]{%
+    \ifnum#1<10 \phantom{0}#1\else #1\fi
+}
 
 % Class options
 \DeclareOptionBeamer{kulak}
@@ -61,7 +65,7 @@
 \newcommand{\InsertFrames}{\insertframenumber}
 \DeclareOptionBeamer{totalframes}
 {
-    \renewcommand{\InsertFrames}{\insertframenumber/\inserttotalframenumber}
+    \renewcommand{\InsertFrames}{\twodigits{\insertframenumber}/\inserttotalframenumber}
 }
 
 
